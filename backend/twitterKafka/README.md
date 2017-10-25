@@ -1,2 +1,1 @@
-CapturaTwiterKafka.xml
-Definição de DataFlow do Apache Nifi que captura dados do Produtor Kafta Twitter, inserindo-os nas tabelas HBASE Contextos_Cidaddao:Midias_Sociais e Eventos_Cidadao:Midias_Sociais
+Classe Kafka Producer que captura dados do Twitter, converte para formato avro e envia para "topico" Kafka.

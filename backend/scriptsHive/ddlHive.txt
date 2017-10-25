@@ -1,0 +1,13 @@
+CREATE EXTERNAL TABLE BeneficiariosBolsaFamilia(nis STRING, nome STRING,
+beneficiario_bolsa_familia STRING , municipio_residencia STRING, uf_residencia STRING)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ('hbase.columns.mapping' =
+':key,Assistencia:Nome,Assistencia:beneficiario_bolsa_familia,Assistencia:municipio_residencia,Assistencia:uf_residencia')
+TBLPROPERTIES ('hbase.table.name' = 'Contextos_Cidadao');
+
+CREATE EXTERNAL TABLE PagamentosBolsaFamilia(id_ocorrencia STRING, tipo STRING,
+descricao STRING , mes_competencia STRING)
+STORED BY 'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
+WITH SERDEPROPERTIES ('hbase.columns.mapping' =
+':key,Assistencia:Tipo,Assistencia:Descricao,Assistencia:Competencia')
+TBLPROPERTIES ('hbase.table.name' = 'Eventos_Cidadao');
