@@ -1,0 +1,2 @@
+create 'Contextos_Cidadao', 'Pessoal','Assistencia','Trabalho','Midias_Sociais'
+create 'Eventos_Cidadao', 'Pessoal','Assistencia','Trabalho','Midias_Sociais'
