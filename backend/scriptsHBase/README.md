@@ -1,0 +1,1 @@
+Scripts de criação de tabelas HBASE,deposito de dados do cidadão 360.

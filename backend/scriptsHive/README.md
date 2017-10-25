@@ -1,0 +1,1 @@
+Scripts de criação de tabelas auxiliares Hive, com objetivo de facilitar a importação de dados no HBase.
